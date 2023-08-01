@@ -9,7 +9,7 @@ export default function QuantityButton({
   setQuantity,
 }: {
   quantity: number;
-  setQuantity: Dispatch<SetStateAction<number>>;
+  setQuantity: (newQuantity: number) => void;
 }) {
   return (
     <div className="border border-line-light-grey rounded-xl flex flex-row items-center justify-around py-3 px-4 w-36 max-h-10">

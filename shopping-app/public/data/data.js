@@ -22,10 +22,10 @@ export const data = {
       price: 200,
       thumbnail: "/images/thumbnail-gamma.png",
       images: [
-        "/images/image1-1.png",
-        "/images/image1-2.png",
-        "/images/image1-3.png",
-        "/images/image1-4.png",
+        "/images/image2-1.png",
+        "/images/image2-2.png",
+        "/images/image2-3.png",
+        "/images/image2-4.png",
       ],
       description:
         "Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good.",
@@ -37,10 +37,10 @@ export const data = {
       price: 160,
       thumbnail: "/images/thumbnail-cosmic.png",
       images: [
-        "/images/image1-1.png",
-        "/images/image1-2.png",
-        "/images/image1-3.png",
-        "/images/image1-4.png",
+        "/images/image3-1.png",
+        "/images/image3-2.png",
+        "/images/image3-3.png",
+        "/images/image3-4.png",
       ],
       description:
         "Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good.",
@@ -52,10 +52,10 @@ export const data = {
       price: 98.99,
       thumbnail: "/images/thumbnail-daily.png",
       images: [
-        "/images/image1-1.png",
-        "/images/image1-2.png",
-        "/images/image1-3.png",
-        "/images/image1-4.png",
+        "/images/image4-1.png",
+        "/images/image4-2.png",
+        "/images/image4-3.png",
+        "/images/image4-4.png",
       ],
       description:
         "Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper. Your walk across campus or commute across town has never looked or felt this good.",

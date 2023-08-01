@@ -1,9 +1,20 @@
-import { configureStore } from "@reduxjs/toolkit";
+import {
+  configureStore,
+  type ThunkAction,
+  type Action,
+} from "@reduxjs/toolkit";
+import {
+  useSelector as useReduxSelector,
+  useDispatch as useReduxDispatch,
+  type TypedUseSelectorHook,
+} from "react-redux";
 import cartSliceReducer from "./slices/cartSlice";
 import storage from "redux-persist/lib/storage";
 import { persistReducer, persistStore } from "redux-persist";
 import thunk from "redux-thunk";
 import storageSession from "reduxjs-toolkit-persist/lib/storage/session";
+
+import { middleware } from "./middleware";
 
 const persistConfig = {
   key: "root",
@@ -12,19 +23,25 @@ const persistConfig = {
 
 const persistedReducer = persistReducer(persistConfig, cartSliceReducer);
 
-// export const store = configureStore({
-//   reducer: {
-//     cart: cartSliceReducer,
-//   },
-// });
-
-export const store = configureStore({
+export const reduxStore = configureStore({
   reducer: persistedReducer,
   devTools: process.env.NODE_ENV !== "production",
-  middleware: [thunk],
+  middleware: (getDefaultMiddleware) => {
+    return getDefaultMiddleware().concat(middleware).concat([thunk]);
+  },
 });
 
-export const persistor = persistStore(store);
+export const persistor = persistStore(reduxStore);
+export const useDispatch = () => useReduxDispatch<ReduxDispatch>();
+export const useSelector: TypedUseSelectorHook<ReduxState> = useReduxSelector;
 
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
+/* Types */
+export type ReduxStore = typeof reduxStore;
+export type ReduxState = ReturnType<typeof reduxStore.getState>;
+export type ReduxDispatch = typeof reduxStore.dispatch;
+export type ReduxThunkAction<ReturnType = void> = ThunkAction<
+  ReturnType,
+  ReduxState,
+  unknown,
+  Action
+>;

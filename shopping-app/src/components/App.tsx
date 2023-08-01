@@ -10,7 +10,7 @@ export default function App({ children }: { children: React.ReactNode }) {
     <>
       <div className="pb-[72px]">
         <Header />
-        <div className="px-40 my-6">{children}</div>
+        <div className="lg:px-40 sm:px-10 my-6">{children}</div>
       </div>
       <Footer />
     </>
