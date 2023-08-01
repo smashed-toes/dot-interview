@@ -21,6 +21,7 @@ module.exports = {
         "pale-green": "#A7C6BA",
         orange: "#EC5E2A",
         "hero-bg": "#EAEEEF",
+        "body-background": "#FDFDFD",
       },
     },
   },

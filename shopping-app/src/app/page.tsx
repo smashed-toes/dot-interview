@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import ProductCard from "./components/ProductCard";
+import ProductCard from "../components/ProductCard";
 import { data } from "../../public/data/data";
 
 export default function Home() {

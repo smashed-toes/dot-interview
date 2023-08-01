@@ -1,11 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Image from "next/image";
-import Button from "@mui/material/Button";
-import { Instagram } from "@mui/icons-material";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { Providers } from "./lib/providers";
+import App from "@/components/App";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,13 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="mx-auto min-h-screen relative">
-        <div className="pb-[72px]">
-          <Header />
-          <div className="px-40 my-6">{children}</div>
-        </div>
-        <Footer />
-      </body>
+      <Providers>
+        <body className="mx-auto min-h-screen relative">
+          <App children={children} />
+        </body>
+      </Providers>
     </html>
   );
 }
