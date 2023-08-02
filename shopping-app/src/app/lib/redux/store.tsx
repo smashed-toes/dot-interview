@@ -12,7 +12,6 @@ import cartSliceReducer from "./slices/cartSlice";
 import storage from "redux-persist/lib/storage";
 import { persistReducer, persistStore } from "redux-persist";
 import thunk from "redux-thunk";
-import storageSession from "reduxjs-toolkit-persist/lib/storage/session";
 
 import { middleware } from "./middleware";
 

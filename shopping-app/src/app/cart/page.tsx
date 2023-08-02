@@ -54,7 +54,9 @@ export default function Cart() {
             {cart.length == 0 ? (
               <span>There are currently no items in your bag.</span>
             ) : (
-              cart.map((product) => <BagItem product={product} />)
+              cart.map((product) => (
+                <BagItem key={product.id} product={product} />
+              ))
             )}
           </div>
         )}
