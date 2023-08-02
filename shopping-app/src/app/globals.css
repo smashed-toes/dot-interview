@@ -13,12 +13,3 @@
 html {
   font-family: "DM Sans", sans-serif;
 }
-
-.MuiButton-root {
-  text-transform: none !important;
-  border-radius: 8px !important;
-}
-
-.MuiButton-outlined {
-  padding: 8px 24px 8px 24px !important;
-}
