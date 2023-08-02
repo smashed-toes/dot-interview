@@ -1,6 +1,6 @@
 "use client";
 
-import { useAppSelector, useAppDispatch } from "@/app/lib/hooks";
+import { useAppSelector } from "@/app/lib/hooks";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { useEffect, useState } from "react";
 import BagItem from "./components/BagItem";
@@ -9,7 +9,6 @@ export default function Cart() {
   const { cart, subtotal, shipping, tax, total } = useAppSelector(
     (state) => state
   );
-  const dispatch = useAppDispatch();
 
   const [mounted, setMounted] = useState(false);
 

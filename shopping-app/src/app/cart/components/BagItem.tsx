@@ -1,7 +1,6 @@
 import { ProductWithQuantity } from "@/components/ProductType";
 import QuantityButton from "@/components/QuantityButton";
 import { useAppDispatch } from "@/app/lib/hooks";
-import { useState } from "react";
 import {
   changeQuantity,
   quantityChangePayload,
@@ -11,8 +10,6 @@ import Image from "next/image";
 
 export default function BagItem({ product }: { product: ProductWithQuantity }) {
   const dispatch = useAppDispatch();
-  const [quantity, setQuantity] = useState(product.quantity);
-
   const updateQuantity = (newQuantity: number) => {
     const quantityChangePayload: quantityChangePayload = {
       id: product.id,

@@ -7,11 +7,12 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: "640px",
-      md: "768px",
+      sm: "0px",
       lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
+    },
+    fontFamily: {
+      sans: ["DM Sans", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
     },
     extend: {
       colors: {

@@ -9,7 +9,6 @@ export interface CartState {
   tax: number;
   total: number;
   cartQuantity: number;
-  loading: boolean;
 }
 
 export type quantityChangePayload = {
@@ -24,7 +23,6 @@ const initialState: CartState = {
   tax: 0,
   total: 0,
   cartQuantity: 0,
-  loading: true,
 };
 
 const cartSlice = createSlice({

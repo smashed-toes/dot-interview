@@ -15,7 +15,7 @@ export default function ProductCard({ product }: { product: Product }) {
         />
         <div className="mb-1">
           <h1 className="font-bold text-2xl">{product.brand}</h1>
-          <h2 className="text-dark-grey">{product.name}</h2>
+          <h2 className="text-dark-grey font-inter">{product.name}</h2>
         </div>
         <span className="text-lg font-medium">{`$${product.price}`}</span>
       </div>

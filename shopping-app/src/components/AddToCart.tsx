@@ -3,7 +3,6 @@
 import QuantityButton from "./QuantityButton";
 import { useState, useEffect } from "react";
 import { useAppDispatch } from "@/app/lib/hooks";
-import { useDispatch } from "react-redux";
 import { addToCart } from "@/app/lib/redux/slices/cartSlice";
 import { Product } from "./ProductType";
 

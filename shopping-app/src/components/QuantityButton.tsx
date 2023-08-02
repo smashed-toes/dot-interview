@@ -2,7 +2,6 @@
 
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
-import { Dispatch, SetStateAction } from "react";
 
 export default function QuantityButton({
   quantity,

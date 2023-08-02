@@ -7,8 +7,6 @@ import Link from "next/link";
 
 export default function Header() {
   const { cartQuantity } = useAppSelector((state) => state);
-  console.log(cartQuantity);
-  console.log(cartQuantity > 0);
 
   const [mounted, setMounted] = useState(false);
 

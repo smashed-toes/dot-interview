@@ -2,8 +2,6 @@
 
 import Header from "./Header";
 import Footer from "./Footer";
-import { useDispatch } from "react-redux";
-import { useEffect } from "react";
 
 export default function App({ children }: { children: React.ReactNode }) {
   return (
