@@ -21,7 +21,7 @@ For running the file locally, run `npm run dev` from the shopping-app directory.
 
 - Express for the API
 
-  Express allowed for me to swiftly build a very simple api to serve the hardcoded product data and incorporate data fetching from a separate api.
+  Express allowed for me to swiftly build a very simple api to serve the hardcoded product data and allowed me to incorporate data fetching logic using a separate server.
 
 - Tailwind:
 
