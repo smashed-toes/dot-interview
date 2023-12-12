@@ -20,7 +20,7 @@ export default function Footer() {
         <span className="font-semibold text-white">SUN CO.</span>
       </div>
       <span className="text-footer-text">
-        © 2023 dot.cards text task. All rights reserved
+        © 2023 shoe time. All rights reserved
       </span>
       <div className="flex justify-between">
         <div className="w-8 h-8 mx-1 rounded-full bg-white/10 text-white flex items-center justify-center">
