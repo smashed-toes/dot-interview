@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 const express = require("express");
 
 const server = express();
-const PORT = 5000;
+const PORT = 5001;
 
 interface Product {
   id: string;

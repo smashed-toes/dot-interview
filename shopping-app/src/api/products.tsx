@@ -1,7 +1,7 @@
 import { Product } from "@/components/ProductType";
 
 export async function fetchProducts(): Promise<Product[]> {
-  const res = await fetch("http://localhost:5000/api/products");
+  const res = await fetch("http://localhost:5001/api/products");
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
@@ -9,7 +9,7 @@ export async function fetchProducts(): Promise<Product[]> {
 }
 
 export async function fetchProductsById(id: string): Promise<Product> {
-  const res = await fetch(`http://localhost:5000/api/products/${id}`);
+  const res = await fetch(`http://localhost:5001/api/products/${id}`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
