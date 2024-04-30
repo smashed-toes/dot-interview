@@ -2,7 +2,10 @@
 
 ## Instructions
 
-For running the file locally, run `npm run dev` from the shopping-app directory.
+For running the file locally:
+1. Install relevant dependencies by running `npm install` in the shopping-app directory
+2. Start the server by running `npm run start-server`.
+3. From a new terminal tab still in the shopping-app directory, run the application with `npm run dev`
 
 ## Infrastructure Choices
 
